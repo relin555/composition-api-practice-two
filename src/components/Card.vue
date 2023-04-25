@@ -10,6 +10,7 @@ const navigateToQuize = () =>
 {
   router.push( `/quiz/${ quiz.id }` )
 };
+
 </script>
 
 <template>
