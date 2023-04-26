@@ -15,7 +15,7 @@ const questionStatus = computed( () => `${ currentQuestionIndex.value } / ${ qui
 const barPrecent = computed( () => `${ currentQuestionIndex.value / quiz.questions.length * 100 }%` );
 const showResult = ref(false)
 
-const onOptionSelected = (isCorrect) =>
+const onOptionSelected = ( isCorrect ) =>
 {
   if ( isCorrect )
   {
@@ -26,7 +26,7 @@ const onOptionSelected = (isCorrect) =>
     showResult.value = true
   }
   currentQuestionIndex.value++
-}
+};
 </script>
 
 <template>
